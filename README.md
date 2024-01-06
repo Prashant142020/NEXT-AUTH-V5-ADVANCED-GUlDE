@@ -1,6 +1,6 @@
 # Next Auth v5 - Advanced Guide (2024)
 
-![image](https://github.com/AntonioErdeljac/next-auth-v5-advanced-guide/assets/23248726/d0175397-8c3f-4e82-91c4-78c14f29bb81)
+ 
 
 This is a repository for Next Auth v5 - Advanced Guide (2024)
 
@@ -62,7 +62,7 @@ npm i
 ```js
 DATABASE_URL=
 DIRECT_URL=
-
+// openssl rand -base64 32
 AUTH_SECRET=
 
 GITHUB_CLIENT_ID=
@@ -78,6 +78,7 @@ NEXT_PUBLIC_APP_URL=
 
 ### Setup Prisma
 ```shell
+
 npx prisma generate
 npx prisma db push
 ```

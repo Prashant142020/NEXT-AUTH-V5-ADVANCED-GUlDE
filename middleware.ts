@@ -47,6 +47,8 @@ export default auth((req) => {
 })
 
 // Optionally, don't invoke Middleware on some paths
+// we take inspiration from Clerkauth here because it's a great idea use these people have a good expprience in bulling auth systems  . 
+//Node: this will protect all routes that are not public or auth routes acpect some routes .
 export const config = {
   matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
 }
